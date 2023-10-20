@@ -1,0 +1,16 @@
+<ion-content color="dark">
+  <img id="img" src="assets\icon\loginlogo.png" />
+  <br/>  
+
+
+  <ion-input  label="Nome Completo"  label-placement="floating" color="medium" fill="outline" ></ion-input>
+  <ion-input label="Data de Nascimento" type= "date" label-placement="floating" color="medium"  fill="outline" ></ion-input>
+  <ion-input  label="Cidade"  label-placement="floating" color="medium" fill="outline" ></ion-input>
+  <ion-input  label="Telefone"  label-placement="floating" color="medium" fill="outline" ></ion-input>
+  <ion-input type="{{ type_senha }}" [(ngModel)]="senha"  label="Criar Senha" type="senha" label-placement="floating" color="medium" fill="outline" ></ion-input>
+  <ion-button class="icon" fill="clear" (click)="showSenha()">
+    <ion-icon name="{{ icon_senha }}"></ion-icon>
+  </ion-button>
+  <ion-button id="entrar" fill="outline"  color="primary" shape="round">OK</ion-button>
+
+</ion-content>

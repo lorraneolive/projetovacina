@@ -1,0 +1,8 @@
+{
+  "name": "vacina",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular",
+  "id": "33c390e9"
+}

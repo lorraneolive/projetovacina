@@ -1,0 +1,27 @@
+
+  <ion-toolbar color="primary">
+    <ion-title> Olá!</ion-title>
+  </ion-toolbar>
+
+<ion-content color="dark">
+  <img id="img" src="assets\icon\loginlogo.png" />
+  <ion-item class="itemtele" color="dark">
+  <ion-input class="intele"  
+  shape="round" label="Nº de telefone"  
+   label-placement="floating" 
+   color="medium" fill="clear"
+    placeholder="(XX) XXXXX-XXXX" [(ngModel)]="telefone" >
+  </ion-input>
+    </ion-item>
+    <ion-item class="itemtele"  color="dark">
+  <ion-input type="{{ type_senha }}" [(ngModel)]="senha" label="Senha"  fill="clear" label-placement="floating" >  </ion-input>
+  <ion-button class="icon" fill="clear" (click)="showSenha()">
+    <ion-icon name="{{ icon_senha }}"></ion-icon>
+  </ion-button>
+  </ion-item>
+  <p  class="link" >Novo aqui? <a href="http://localhost:8100/cadastro">Crie uma conta</a></p>
+  
+
+  <ion-button class="entrar" color="primary" shape="round" >Entrar</ion-button>
+
+  </ion-content>
